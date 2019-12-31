@@ -9,7 +9,9 @@ app.get('/', (req, res) => {
     "this is the node app"
   )
 })
+
+const PORT = process.env.PORT || 3000;
 console.log('process', process.evn)
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log('listning')
 });
